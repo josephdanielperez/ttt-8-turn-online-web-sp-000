@@ -32,9 +32,9 @@ def turn(board)
     move(board, index, player = "X")
   else valid_move?(board, index) == false
     turn(board)
-  end
 
-  display_board(board)
+    display_board(board)
+  end
 end
 
 def position_taken?(board, index)
