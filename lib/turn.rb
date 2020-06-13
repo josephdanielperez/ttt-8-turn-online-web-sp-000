@@ -28,7 +28,9 @@ def turn(board)
 
   input_to_index(user_input.to_i)
 
+  input_to_index = index
 
+  valid_move?(board, index)
 end
 
 def position_taken?(board, index)
