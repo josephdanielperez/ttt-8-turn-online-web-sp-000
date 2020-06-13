@@ -30,7 +30,7 @@ def turn(board)
 
   if valid_move?(board, index) == false
     turn(board)
-  else valid_move?(board, index) != false
+  else valid_move?(board, index) == true
     move(board, index, player = "X")
   end
 end
