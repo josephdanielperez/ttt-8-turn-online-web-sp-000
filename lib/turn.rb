@@ -24,5 +24,16 @@ end
 
 def turn(board)
   puts "Please enter 1-9:"
-  gets.strip
+  gets.strip = user_input
+  input_toindex(user_input)
+end
+
+def position_taken?(board, index)
+  if (board[index] == "X") || (board[index] == "O")
+    return true
+  elsif index == 0
+    return false
+  elsif index != 0
+    return false
+  end
 end
